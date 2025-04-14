@@ -17,37 +17,59 @@ A custom UI framework built from scratch for web development, inspired by Bootst
 ```
 ui-library/
 ├── css/
-│   ├── main.css               (compiled from SCSS)
-│   └── main.min.css           (minified version)
-├── scss/
-│   ├── base/
-│   │   ├── _reset.scss        (CSS reset)
-│   │   ├── _typography.scss   (font styles)
-│   │   ├── _variables.scss    (global variables)
-│   │   └── _root.scss         (CSS variables)
-│   ├── components/
-│   │   ├── _buttons.scss
-│   │   ├── _cards.scss
-│   │   ├── _forms.scss
-│   │   └── _navbars.scss
-│   ├── layout/
-│   │   └── _grid.scss         (12-column grid system)
-│   ├── utilities/
-│   │   ├── _spacing.scss      (margin, padding)
-│   │   ├── _display.scss      (display properties)
-│   │   ├── _flex.scss         (flexbox utilities)
-│   │   ├── _text.scss         (text alignment, etc.)
-│   │   └── _colors.scss       (color utilities)
-│   ├── themes/
-│   │   └── _dark-mode.scss    (dark theme variables)
-│   └── main.scss              (imports all SCSS files)
+│   └── main.css               (complete CSS framework)
 ├── js/
 │   └── ui-library.js          (minimal JS for interactive components)
-└── demo/
-    ├── index.html             (showcase all components)
-    ├── docs.html              (documentation)
-    └── examples/              (example layouts)
+├── demo/
+│   ├── index.html             (showcase all components)
+│   ├── docs.html              (documentation)
+│   └── examples/
+│       ├── dashboard.html     (example dashboard layout)
+│       ├── landing-page.html  (example landing page)
+│       └── blog.html          (example blog layout)
+└── index.html                 (main entry point/redirects to demo)
 ```
+
+## File Contents Overview
+
+### CSS (css/main.css)
+The main CSS file contains all styling for the framework, organized into these logical sections:
+1. CSS Reset & Base Styles
+2. Root Variables (colors, spacing, typography)
+3. Typography Styles
+4. Grid System
+5. Component Styles
+   - Buttons
+   - Cards
+   - Forms
+   - Navbar
+   - Alerts
+   - Badges
+   - Tables
+6. Utility Classes
+   - Spacing (margin/padding)
+   - Display properties
+   - Flex utilities
+   - Text utilities
+   - Color utilities
+7. Dark Mode Theming
+
+### JavaScript (js/ui-library.js)
+Contains minimal JavaScript for interactive components:
+1. DOM utilities
+2. Component initialization
+3. Dark mode toggle functionality
+4. Responsive navigation handling
+5. Form validation
+6. Modal/dialog functionality
+7. Dropdown menu functionality
+8. Tab component functionality
+9. Accordion component functionality
+
+### Demo Files
+- **index.html**: Main component showcase with live examples
+- **docs.html**: Documentation for using the framework
+- **examples/**: Real-world usage examples showing layouts built with the framework
 
 ## Getting Started
 
@@ -63,35 +85,15 @@ ui-library/
    cd ui-library
    ```
 
-3. If you have SASS installed globally, compile the SCSS files:
-   ```
-   sass scss/main.scss css/main.css
-   ```
-
-4. For minified version:
-   ```
-   sass scss/main.scss css/main.min.css --style compressed
+3. Start using the library by including the CSS and JS files in your HTML:
+   ```html
+   <link rel="stylesheet" href="path/to/ui-library/css/main.css">
+   <script src="path/to/ui-library/js/ui-library.js"></script>
    ```
 
-### Usage
-
-Include the CSS in your HTML:
-
-```html
-<link rel="stylesheet" href="path/to/ui-library/css/main.css">
-```
-
-Include the JavaScript file (optional, for interactive components):
-
-```html
-<script src="path/to/ui-library/js/ui-library.js"></script>
-```
-
-## Core Components
+## Usage Examples
 
 ### Grid System
-
-The framework uses a 12-column responsive grid system:
 
 ```html
 <div class="container">
@@ -100,16 +102,6 @@ The framework uses a 12-column responsive grid system:
     <div class="col-md-6">Half width on medium screens and up</div>
   </div>
 </div>
-```
-
-### Typography
-
-```html
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<p class="lead">Lead paragraph</p>
-<p>Regular paragraph</p>
-<p class="text-muted">Muted text</p>
 ```
 
 ### Buttons
@@ -134,29 +126,6 @@ The framework uses a 12-column responsive grid system:
 </div>
 ```
 
-## Utility Classes
-
-### Spacing
-
-- Margin: `m-1`, `mt-2`, `mr-3`, `mb-4`, `ml-5`, `mx-auto`
-- Padding: `p-1`, `pt-2`, `pr-3`, `pb-4`, `pl-5`
-
-### Display
-
-- `d-block`, `d-inline`, `d-flex`, `d-none`
-- Responsive variants: `d-sm-block`, `d-md-none`, etc.
-
-### Text
-
-- Alignment: `text-left`, `text-center`, `text-right`
-- Transform: `text-uppercase`, `text-lowercase`, `text-capitalize`
-- Weight: `fw-light`, `fw-normal`, `fw-bold`
-
-### Colors
-
-- Text: `text-primary`, `text-danger`, etc.
-- Background: `bg-primary`, `bg-success`, etc.
-
 ## Dark Mode
 
 The framework includes a built-in dark mode. To enable it:
@@ -170,7 +139,9 @@ The framework includes a built-in dark mode. To enable it:
 Or toggle it with JavaScript:
 
 ```javascript
-document.body.classList.toggle('dark-mode');
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+});
 ```
 
 ## Browser Support
@@ -197,20 +168,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Inspired by Bootstrap's grid system and utility classes
 - Created as part of a college hackathon project
-
-
-This is the complete thing we will be making from scratch ok :
-
-the steps or procedure we are going to follow :
-1. Responsive 12-column grid system
-
-2. Utility classes (spacing, typography, flex)
-
-3. Design tokens (color, spacing, fonts)
-
-4. Dark mode (optional bonus)
-
-5. Reusable components (buttons, cards, navbars, etc.)
-
-6. Documentation/Demo site
-   
