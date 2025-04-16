@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCSSLib - Modern CSS Library</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/dark.css">
+  </head>
+  <body>
+   
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container navbar-content">
+        <a href="#" class="logo">MyCSSLib</a>
+        <button class="mobile-toggle" id="mobileToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to MyCSSLib</h1>
+        <p>
+          A lightweight, responsive CSS library for modern web development.
+          Click on the components below to explore their features.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-button active" data-target="grid">
+            Grid System
+          </button>
+          <button class="filter-button" data-target="buttons">Buttons</button>
+          <button class="filter-button" data-target="cards">Cards</button>
+          <button class="filter-button" data-target="typography">
+            Typography
+          </button>
+          <button class="filter-button" data-target="flexbox">Flexbox</button>
+          <button class="filter-button" data-target="forms">Forms</button>
+        </div>
+
+        <!-- Grid System Section -->
+        <div id="grid" class="content-section active">
+          <h2 class="section-title">Grid System</h2>
+          <p>
+            Our responsive 12-column grid system helps you create flexible
+            layouts with ease. Simply use the appropriate column classes.
+          </p>
+
+          <div class="grid-example">
+            <h3>Basic Grid</h3>
+            <div class="grid-container">
+              <div class="grid-item col-12">col-12 (Full Width)</div>
+            </div>
+            <div class="grid-container">
+              <div class="grid-item col-6">col-6</div>
+              <div class="grid-item col-6">col-6</div>
+            </div>
+            <div class="grid-container">
+              <div class="grid-item col-4">col-4</div>
+              <div class="grid-item col-4">col-4</div>
+              <div class="grid-item col-4">col-4</div>
+            </div>
+            <div class="grid-container">
+              <div class="grid-item col-3">col-3</div>
+              <div class="grid-item col-3">col-3</div>
+              <div class="grid-item col-3">col-3</div>
+              <div class="grid-item col-3">col-3</div>
+            </div>
+          </div>
+
+          <div class="grid-example">
+            <h3>Mixed Grid</h3>
+            <div class="grid-container">
+              <div class="grid-item col-6">col-6</div>
+              <div class="grid-item col-3">col-3</div>
+              <div class="grid-item col-3">col-3</div>
+            </div>
+            <div class="grid-container">
+              <div class="grid-item col-3">col-3</div>
+              <div class="grid-item col-6">col-6</div>
+              <div class="grid-item col-3">col-3</div>
+            </div>
+          </div>
+
+          <pre>
+&lt;div class="grid-container"&gt;
+&lt;div class="grid-item col-4"&gt;col-4&lt;/div&gt;
+&lt;div class="grid-item col-4"&gt;col-4&lt;/div&gt;
+&lt;div class="grid-item col-4"&gt;col-4&lt;/div&gt;
+&lt;/div&gt;
+            </pre
+          >
+        </div>
+
+        <!-- Buttons Section -->
+        <div id="buttons" class="content-section">
+          <h2 class="section-title">Buttons</h2>
+          <p>
+            Use our customizable button styles for actions in forms, dialogs,
+            and more.
+          </p>
+
+          <h3>Button Variants</h3>
+          <div class="button-section">
+            <button class="btn-primary">Primary Button</button>
+            <button class="btn-secondary">Secondary Button</button>
+            <button class="btn-light">Light Button</button>
+            <button class="btn-outline">Outline Button</button>
+            <button class="btn-danger">Danger Button</button>
+          </div>
+
+          <h3>Button Sizes</h3>
+          <div class="button-section">
+            <button class="btn-primary btn-small">Small Button</button>
+            <button class="btn-primary">Default Button</button>
+            <button class="btn-primary btn-large">Large Button</button>
+
+          </div>
+
+          <pre>
+&lt;button class="btn-primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="btn-secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="btn-light"&gt;Light Button&lt;/button&gt;
+&lt;button class="btn-outline"&gt;Outline Button&lt;/button&gt;
+            </pre
+          >
+        </div>
+
+        <!-- Cards Section -->
+        <div id="cards" class="content-section">
+          <h2 class="section-title">Cards</h2>
+          <p>
+            Cards provide a flexible and extensible content container with
+            multiple variants.
+          </p>
+
+          <h3>Basic Card</h3>
+          <div class="card">
+            <div class="card-header">Card Title</div>
+            <div class="card-body">
+              <p>
+                This is some card content. Cards can be used to display content
+                in a clear and organized way.
+              </p>
+            </div>
+          </div>
+
+          <h3>Card with Footer</h3>
+          <div class="card">
+            <div class="card-header">Card with Footer</div>
+            <div class="card-body">
+              <p>
+                This card has a footer section for additional actions or
+                information.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn-primary">Action</button>
+            </div>
+          </div>
+
+          <h3>Card Grid</h3>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-header">Card 1</div>
+              <div class="card-body">
+                <p>First card in the grid.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">Card 2</div>
+              <div class="card-body">
+                <p>Second card in the grid.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">Card 3</div>
+              <div class="card-body">
+                <p>Third card in the grid.</p>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+&lt;div class="card"&gt;
+&lt;div class="card-header"&gt;Card Title&lt;/div&gt;
+&lt;div class="card-body"&gt;
+    &lt;p&gt;Card content goes here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="card-footer"&gt;
+    &lt;button class="btn-primary"&gt;Action&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+            </pre
+          >
+        </div>
+
+        <!-- Typography Section -->
+        <div id="typography" class="content-section">
+          <h2 class="section-title">Typography</h2>
+          <p>
+            Our typography system provides consistent and readable text styles.
+          </p>
+
+          <div class="heading-demo">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+
+          <h3>Text Colors</h3>
+          <p class="text-primary">This text has the primary color.</p>
+          <p class="text-secondary">This text has the secondary color.</p>
+          <p style="background-color: #343a40" class="text-light">
+            This text has the light color.
+          </p>
+          <p class="text-dark">This text has the dark color.</p>
+
+          <h3>Text Alignment</h3>
+          <p class="text-left">Left aligned text.</p>
+          <p class="text-center">Center aligned text.</p>
+          <p class="text-right">Right aligned text.</p>
+
+          <pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;p class="text-primary"&gt;This text has the primary color.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+            </pre
+          >
+        </div>
+
+        <!-- Add this button to your filter-buttons div -->
+
+<!-- Add this content section after your existing content sections -->
+<div id="flexbox" class="content-section">
+    <h2 class="section-title">Flexbox</h2>
+    <p>Flexbox provides a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown or dynamic.</p>
+    
+    <h3>Flex Direction</h3>
+    <div class="flex-demo">
+        <div class="flex-container flex-row">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">flex-direction: row</p>
+    </div>
+    
+    <div class="flex-demo">
+        <div class="flex-container flex-column">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">flex-direction: column</p>
+    </div>
+    
+    <h3>Justify Content</h3>
+    <div class="flex-demo">
+        <div class="flex-container justify-start">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">justify-content: flex-start</p>
+    </div>
+    
+    <div class="flex-demo">
+        <div class="flex-container justify-center">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">justify-content: center</p>
+    </div>
+    
+    <div class="flex-demo">
+        <div class="flex-container justify-end">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">justify-content: flex-end</p>
+    </div>
+    
+    <div class="flex-demo">
+        <div class="flex-container justify-between">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">justify-content: space-between</p>
+    </div>
+    
+    <h3>Align Items</h3>
+    <div class="flex-demo">
+        <div class="flex-container align-start">
+            <div class="flex-item">1</div>
+            <div class="flex-item flex-item-tall">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">align-items: flex-start</p>
+    </div>
+    
+    <div class="flex-demo">
+        <div class="flex-container align-center">
+            <div class="flex-item">1</div>
+            <div class="flex-item flex-item-tall">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">align-items: center</p>
+    </div>
+    
+    <div class="flex-demo">
+        <div class="flex-container align-end">
+            <div class="flex-item">1</div>
+            <div class="flex-item flex-item-tall">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <p class="demo-label">align-items: flex-end</p>
+    </div>
+    
+    <h3>Flex Wrap</h3>
+    <div class="flex-demo">
+        <div class="flex-container flex-nowrap">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+        <p class="demo-label">flex-wrap: nowrap</p>
+    </div>
+    
+    <div class="flex-demo">
+        <div class="flex-container flex-wrap">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+        <p class="demo-label">flex-wrap: wrap</p>
+    </div>
+    
+    <h3>Margin & Padding</h3>
+    <div class="flex-demo">
+        <div class="flex-container">
+            <div class="flex-item">Normal</div>
+            <div class="flex-item flex-margin">Margin</div>
+            <div class="flex-item flex-padding">Padding</div>
+        </div>
+        <p class="demo-label">Margin & Padding Examples</p>
+    </div>
+    
+    <h3>Flex Item Properties</h3>
+    <div class="flex-demo">
+        <div class="flex-container">
+            <div class="flex-item flex-grow-1">flex-grow: 1</div>
+            <div class="flex-item flex-grow-2">flex-grow: 2</div>
+            <div class="flex-item flex-grow-1">flex-grow: 1</div>
+        </div>
+        <p class="demo-label">flex-grow property</p>
+    </div>
+
+    <pre>
+&lt;div class="flex-container"&gt;
+    &lt;div class="flex-item"&gt;1&lt;/div&gt;
+    &lt;div class="flex-item"&gt;2&lt;/div&gt;
+    &lt;div class="flex-item"&gt;3&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+</div>
+
+        <!-- Forms Section -->
+        <div id="forms" class="content-section">
+          <h2 class="section-title">Forms</h2>
+          <p>Our form components help you create clean and accessible forms.</p>
+
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+
+          <pre>
+&lt;div class="form-group"&gt;
+&lt;label class="form-label" for="name"&gt;Name&lt;/label&gt;
+&lt;input type="text" class="form-control" id="name" placeholder="Enter your name"&gt;
+&lt;/div&gt;
+            </pre
+          >
+        </div>
+      </div>
+    </section>
+
+    <button id="modeToggler" class="mode-toggle" onclick="toggleMode()">
+      <i id="modeIcon" class="fas fa-moon"></i>
+      <span id="modeText">Dark Mode</span>
+  </button>
+  
+    <script src="./js/ui-library.js"></script>
+  </body>
+</html>
