@@ -1,0 +1,46 @@
+body.dark-mode {
+  background-color: #1a1a1a;
+
+}
+
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 2px solid #555;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 2rem ;
+  margin-bottom: 5rem;
+}
+
+body.dark-mode .mode-toggle {
+  background-color: #333;
+  color: white;
+  border-color: #777;
+}
+
+.mode-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mode-toggle i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.content {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .content {
+  background-color: #333;
+}

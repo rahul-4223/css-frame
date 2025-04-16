@@ -1,0 +1,520 @@
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --danger-color:#ff0000;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --border-color: #dee2e6;
+            --border-radius: 4px;
+            --spacing: 1rem;
+            --box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        body.dark-mode {
+            background-color: #333;
+           
+        }
+        .dark-mode-btn{
+            margin-left: 88%;
+            height: 2rem;
+            width:9rem;
+        }
+        body.dark-mode .btn {
+            background-color: #2ecc71;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Filter Buttons */
+        .filter-section {
+            padding: 1.5rem 0;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .filter-button {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-button:hover {
+            background-color: var(--light-color);
+        }
+
+        .filter-button.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: none;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Button Component */
+        .button-section button {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-light {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            border-color: var(--border-color);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-danger{
+          background-color: red;
+          color: white;
+
+        }
+        .btn-large {
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-small {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        /* Grid System */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid-example {
+            margin-bottom: 2rem;
+        }
+
+        .grid-item {
+            background-color: var(--light-color);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        .col-1 { grid-column: span 1; }
+        .col-2 { grid-column: span 2; }
+        .col-3 { grid-column: span 3; }
+        .col-4 { grid-column: span 4; }
+        .col-6 { grid-column: span 6; }
+        .col-12 { grid-column: span 12; }
+
+        /* Card Component */
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .card-header {
+            padding: 1rem;
+            background-color: var(--light-color);
+            border-bottom: 1px solid var(--border-color);
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .card-footer {
+            padding: 1rem;
+            background-color: var(--light-color);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        /* Add these styles to your existing CSS */
+
+/* Flexbox Component */
+.flex-demo {
+  margin-bottom: 2rem;
+}
+
+.demo-label {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+.flex-container {
+  display: flex;
+  background-color: var(--light-color);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  min-height: 80px;
+}
+
+.flex-item {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  margin: 0.25rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  min-width: 60px;
+}
+
+.flex-item-tall {
+  height: 80px;
+}
+
+/* Flex Direction */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+  height: 200px;
+}
+
+/* Justify Content */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Align Items */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+/* Flex Wrap */
+.flex-nowrap {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Margin & Padding Examples */
+.flex-margin {
+  margin: 1rem;
+}
+
+.flex-padding {
+  padding: 2rem;
+}
+
+/* Flex Grow */
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flex-container {
+      overflow-x: auto;
+  }
+}
+        /* Typography */
+        .heading-demo h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .heading-demo h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .heading-demo h3 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .heading-demo h4 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .heading-demo h5 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .heading-demo h6 { font-size: 1rem; margin-bottom: 0.5rem; }
+
+        .text-primary { color: var(--primary-color); }
+        .text-secondary { color: var(--secondary-color); }
+        .text-light { color: var(--light-color); }
+        .text-dark { color: var(--dark-color); }
+
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .text-left { text-align: left; }
+
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-left: 1.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 768px) {
+            .navbar-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 0.5rem 0;
+                margin-left: 0;
+            }
+
+            .mobile-toggle {
+                display: block;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            .footer-links li:first-child {
+                margin-left: 0;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .col-1, .col-2, .col-3, .col-4, .col-6, .col-12 {
+                grid-column: span 1;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            .col-1, .col-2, .col-3 {
+                grid-column: span 4;
+            }
+            .col-4, .col-6 {
+                grid-column: span 6;
+            }
+        }
