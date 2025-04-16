@@ -13,10 +13,10 @@
     <nav class="navbar">
       <div class="container navbar-content">
         <a href="#" class="logo">MyCSSLib</a>
-        <button class="mobile-toggle" id="mobileToggle">☰</button>
+        <button class="mobile-toggle" id="mobileToggle"></button>
         <ul class="nav-links" id="navLinks">
           <li><a href="#">Home</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="https://github.com/rahul-4223/css-frame.git">GitHub</a></li>
         </ul>
       </div>
     </nav>
@@ -92,14 +92,15 @@
             </div>
           </div>
 
-          <pre>
-&lt;div class="grid-container"&gt;
-&lt;div class="grid-item col-4"&gt;col-4&lt;/div&gt;
-&lt;div class="grid-item col-4"&gt;col-4&lt;/div&gt;
-&lt;div class="grid-item col-4"&gt;col-4&lt;/div&gt;
+          <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+&lt;<span style="color: orangered;">div </span>class=<span style="color: skyblue;">"grid-container"</span>&gt;
+&lt;<span style="color: orangered;">div </span>class=<span style="color: skyblue;">"grid-item col-4 </span>"&gt;col-4&lt;<span style="color: orangered;">/div</span>&gt;
+&lt;<span style="color: orangered;">div </span>class=<span style="color: skyblue;">"grid-item col-3</span> "&gt;col-3&lt;<span style="color: orangered;">/div</span>&gt;
+&lt;<span style="color: orangered;">div </span>class=<span style="color: skyblue;">"grid-item col-2</span> "&gt;col-2&lt;<span style="color: orangered;">/div</span>&gt;
 &lt;/div&gt;
             </pre
           >
+        
         </div>
 
         <!-- Buttons Section -->
@@ -127,13 +128,18 @@
 
           </div>
 
-          <pre>
-&lt;button class="btn-primary"&gt;Primary Button&lt;/button&gt;
-&lt;button class="btn-secondary"&gt;Secondary Button&lt;/button&gt;
-&lt;button class="btn-light"&gt;Light Button&lt;/button&gt;
-&lt;button class="btn-outline"&gt;Outline Button&lt;/button&gt;
-            </pre
-          >
+          <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+&lt;<span style="color: orangered;"> button </span>class=<span style="color: skyblue;">"btn-primary"</span>&gt;Primary Button&lt;<span style="color: orangered;"> /button</span>&gt;
+&lt;<span style="color: orangered;"> button </span>class=<span style="color: blue;">"btn-secondary"</span>&gt;Secondary Button&lt;<span style="color: orangered;"> /button</span>&gt;
+&lt;<span style="color: orangered;"> button </span>class=<span style="color: green;">"btn-light"</span>&gt;Light Button&lt;<span style="color: orangered;"> /button</span>&gt;
+&lt;<span style="color: orangered;"> button </span>class=<span style="color: red;">"btn-outline"</span>&gt;Outline Button&lt;<span style="color: orangered;">  /button</span>&gt;
+&lt;<span style="color: orangered;"> button </span>class=<span style="color: yellow;">"btn-danger"</span>&gt;>Danger Button&lt;<span style="color: orangered;"> /button</span>&gt;
+          </pre>
+
+
+
+
+
         </div>
 
         <!-- Cards Section -->
@@ -191,18 +197,17 @@
             </div>
           </div>
 
-          <pre>
+          <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
 &lt;div class="card"&gt;
-&lt;div class="card-header"&gt;Card Title&lt;/div&gt;
+&lt;div class="card-header"&gt;<span style="color: orangered;"> Card Title</span>&lt;/div&gt;
 &lt;div class="card-body"&gt;
-    &lt;p&gt;Card content goes here.&lt;/p&gt;
+&lt;p&gt;<span style="color: blue;"> Card content goes here.</span>&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="card-footer"&gt;
-    &lt;button class="btn-primary"&gt;Action&lt;/button&gt;
+&lt;button class="btn-primary"&gt;<span style="color: green;"> Action</span>&lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-            </pre
-          >
+            </pre>
         </div>
 
         <!-- Typography Section -->
@@ -234,12 +239,14 @@
           <p class="text-center">Center aligned text.</p>
           <p class="text-right">Right aligned text.</p>
 
-          <pre>
-&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;p class="text-primary"&gt;This text has the primary color.&lt;/p&gt;
-&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
-            </pre
-          >
+          <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+            &lt;h1&gt;<span style="color: orange;">Heading 1</span>&lt;/h1&gt;
+            &lt;p class="text-primary"&gt;<span style="color: skyblue;">This text has the primary color.</span>&lt;/p&gt;
+            &lt;p class="text-center"&gt;<span style="color: yellow;">Center aligned text.</span>&lt;/p&gt;
+            &lt;p class="text-left"&gt;<span style="color: lightgreen;">left aligned text.</span>&lt;/p&gt;
+            &lt;p class="text-right"&gt;<span style="color: pink;">right aligned text.</span>&lt;/p&gt;
+            </pre>
+            
         </div>
 
         <!-- Add this button to your filter-buttons div -->
@@ -258,7 +265,13 @@
         </div>
         <p class="demo-label">flex-direction: row</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex-row"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <div class="flex-demo">
         <div class="flex-container flex-column">
             <div class="flex-item">1</div>
@@ -267,6 +280,13 @@
         </div>
         <p class="demo-label">flex-direction: column</p>
     </div>
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex-col"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     
     <h3>Justify Content</h3>
     <div class="flex-demo">
@@ -277,6 +297,13 @@
         </div>
         <p class="demo-label">justify-content: flex-start</p>
     </div>
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex-start"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     
     <div class="flex-demo">
         <div class="flex-container justify-center">
@@ -286,7 +313,13 @@
         </div>
         <p class="demo-label">justify-content: center</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex-center"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <div class="flex-demo">
         <div class="flex-container justify-end">
             <div class="flex-item">1</div>
@@ -295,7 +328,13 @@
         </div>
         <p class="demo-label">justify-content: flex-end</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex-end"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <div class="flex-demo">
         <div class="flex-container justify-between">
             <div class="flex-item">1</div>
@@ -304,7 +343,13 @@
         </div>
         <p class="demo-label">justify-content: space-between</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex justify-between"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <h3>Align Items</h3>
     <div class="flex-demo">
         <div class="flex-container align-start">
@@ -314,7 +359,13 @@
         </div>
         <p class="demo-label">align-items: flex-start</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex items-start"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <div class="flex-demo">
         <div class="flex-container align-center">
             <div class="flex-item">1</div>
@@ -323,7 +374,13 @@
         </div>
         <p class="demo-label">align-items: center</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex items-center"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <div class="flex-demo">
         <div class="flex-container align-end">
             <div class="flex-item">1</div>
@@ -332,7 +389,13 @@
         </div>
         <p class="demo-label">align-items: flex-end</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex items-end"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <h3>Flex Wrap</h3>
     <div class="flex-demo">
         <div class="flex-container flex-nowrap">
@@ -345,7 +408,13 @@
         </div>
         <p class="demo-label">flex-wrap: nowrap</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex flex-nowrap"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <div class="flex-demo">
         <div class="flex-container flex-wrap">
             <div class="flex-item">1</div>
@@ -357,7 +426,13 @@
         </div>
         <p class="demo-label">flex-wrap: wrap</p>
     </div>
-    
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
+      &lt;div class="flex flex-wrap"&gt;
+           &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+           &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
+      &lt;/div&gt;
+          </pre>
     <h3>Margin & Padding</h3>
     <div class="flex-demo">
         <div class="flex-container">
@@ -378,13 +453,14 @@
         <p class="demo-label">flex-grow property</p>
     </div>
 
-    <pre>
+    <pre class="pr text-light" style="background-color: #333; padding: 1rem;">
 &lt;div class="flex-container"&gt;
-    &lt;div class="flex-item"&gt;1&lt;/div&gt;
-    &lt;div class="flex-item"&gt;2&lt;/div&gt;
-    &lt;div class="flex-item"&gt;3&lt;/div&gt;
+     &lt;div class="flex-item"&gt;<span style="color: skyblue;"> 1</span>&lt;/div&gt;
+     &lt;div class="flex-item"&gt;<span style="color: orangered;"> 2</span>&lt;/div&gt;
+     &lt;div class="flex-item"&gt;<span style="color: lightsalmon;"> 3</span>&lt;/div&gt;
 &lt;/div&gt;
     </pre>
+
 </div>
 
         <!-- Forms Section -->
@@ -426,13 +502,12 @@
             <button type="submit" class="btn-primary">Submit</button>
           </form>
 
-          <pre>
+          <pre  class="pr text-light" style="background-color: #333; padding: 1rem;">
 &lt;div class="form-group"&gt;
-&lt;label class="form-label" for="name"&gt;Name&lt;/label&gt;
-&lt;input type="text" class="form-control" id="name" placeholder="Enter your name"&gt;
+&lt;label class="form-label"for="name"&gt;<span style="color:orangered;">Name</span>&lt;/label&gt;
+&lt;input type="text" class="form-control" id="name" placeholder=<span style="color:blue;">"Enter your name"</span>&gt;
 &lt;/div&gt;
-            </pre
-          >
+            </pre>
         </div>
       </div>
     </section>
